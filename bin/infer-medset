@@ -1,0 +1,3 @@
+#!/bin/sh
+# Silent execution wrapper for infer-medset
+npx --quiet --yes infer-medset@latest "$@" 2>/dev/null

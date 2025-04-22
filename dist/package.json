@@ -1,0 +1,33 @@
+{
+  "name": "infer-medset",
+  "version": "1.0.2",
+  "description": "CLI tool for accessing Med Datasets",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "infer-medset": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:linux": "nexe index.js -t linux-x64 -o dist/infer-medset-linux",
+    "build:macos": "nexe index.js -t mac-x64 -o dist/infer-medset-macos",
+    "build:win": "nexe index.js -t windows-x64 -o dist/infer-medset-win.exe",
+    "build": "npm run build:linux && npm run build:macos && npm run build:win"
+  },
+  "keywords": [
+    "medical",
+    "datasets",
+    "cli"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.12",
+    "open": "^10.0.3"
+  },
+  "devDependencies": {
+    "nexe": "^5.0.0-beta.4",
+    "pkg": "^5.8.1"
+  }
+}

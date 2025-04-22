@@ -4,9 +4,7 @@
   "description": "CLI tool for accessing Med Datasets",
   "main": "index.js",
   "type": "module",
-  "bin": {
-    "infer-medset": "./index.js"
-  },
+  "bin": "./index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,11 +17,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.4.1",
-    "figlet": "^1.8.1",
-    "figlet-cli": "^0.3.0",
-    "inquirer": "^12.5.2",
-    "open": "^10.1.1",
-    "terminal-kit": "^3.1.2"
+    "inquirer": "^9.2.12",
+    "open": "^10.0.3"
+  },
+  "devDependencies": {
+    "nexe": "^5.0.0-beta.4",
+    "pkg": "^5.8.1"
   }
 }
