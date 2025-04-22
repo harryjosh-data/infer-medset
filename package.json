@@ -1,0 +1,29 @@
+{
+  "name": "infer-medset",
+  "version": "1.0.0",
+  "description": "CLI tool for accessing Med Datasets",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "infer-medset": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "medical",
+    "datasets",
+    "cli"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "figlet": "^1.8.1",
+    "figlet-cli": "^0.3.0",
+    "inquirer": "^12.5.2",
+    "open": "^10.1.1",
+    "terminal-kit": "^3.1.2"
+  }
+}
